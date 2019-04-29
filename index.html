@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Задание 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <form id="calc" class="calc-form" action="">
+    
+    <div class="calc-form__fields-group">
+      <label class="calc-form__label" for="first-number">Первое число:</label>
+      <input id="first-number" class="calc-form__input" name="numb1" type="text" value="0.1" maxlength="15">
+    </div>
+    
+    <div class="calc-form__fields-group">
+      <label class="calc-form__label" for="second-number">Второе число:</label>
+      <input id="second-number" class="calc-form__input" name="numb2" type="text" value="0.2" maxlength="15">
+    </div>
+    
+    <div class="calc-form__fields-group">
+      <button class="calc-form__compute-btn" type="submit">Сложить</button>
+    </div>
+    
+    <div class="calc-form__modal-box">
+      <div class="calc-form__fields-group">
+        <label class="calc-form__label" for="calc-result">Результат:</label>
+        <output id="calc-result" class="calc-form__output" for="first-number second-number"></output>
+        <button id="close-btn" class="calc-form__close-btn" type="button">OK</button>
+      </div>
+    </div>
+
+  </form>
+  <script src="js/lib/big.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
