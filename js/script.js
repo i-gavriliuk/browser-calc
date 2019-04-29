@@ -4,7 +4,7 @@ const modal = form.querySelector('.calc-form__modal-box');
 const output = modal.querySelector('#calc-result');
 
 const isNumber = function whetherNumberRepresentationValid(numbRepr) {
-  return /^[+-]?\d+(\.\d)?\d*$/.test(numbRepr);
+  return /^-?\d+(\.\d)?\d*$/.test(numbRepr);
 };
 
 const getAddition = function returnTwoValuesSum(val1, val2) {
